@@ -124,9 +124,9 @@ default['travis_build_environment']['packer_version'] = '1.0.2'
 if node['kernel']['machine'] == 'ppc64le'
   default['travis_build_environment']['packer_version'] = '1.1.3'
   default['travis_build_environment']['packer_url'] = \
-    'https://releases.hashicorp.com/packer/1.1.3/packer_1.1.3_linux_ppc64le.zip'
+   'https://releases.hashicorp.com/packer/1.1.3/packer_1.1.3_linux_ppc64le.zip'
   default['travis_build_environment']['packer_checksum'] = \
-    '25ecb9b4592924c9d04ef2cb3796690827e559e24789efacefc58f795676d329'
+   '25ecb9b4592924c9d04ef2cb3796690827e559e24789efacefc58f795676d329'
 end
 default['travis_build_environment']['packer_binaries'] = %w[packer]
 default['travis_build_environment']['ramfs_dir'] = '/var/ramfs'
@@ -244,9 +244,9 @@ default['travis_build_environment']['lein_url'] = 'https://raw.githubusercontent
 default['travis_build_environment']['sysctl_kernel_shmmax'] = 45_794_432
 default['travis_build_environment']['sysctl_disable_ipv6'] = true
 
-default['travis_build_environment']['maven_url'] = 'https://www.apache.org/dist/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.tar.gz'
-default['travis_build_environment']['maven_version'] = '3.5.3'
-default['travis_build_environment']['maven_checksum'] = 'b52956373fab1dd4277926507ab189fb797b3bc51a2a267a193c931fffad8408'
+default['travis_build_environment']['maven_url'] = 'http://ftp.unicamp.br/pub/apache/maven/maven-3/3.5.4/binaries/apache-maven-3.5.4-bin.tar.gz'
+default['travis_build_environment']['maven_version'] = '3.5.4'
+#default['travis_build_environment']['maven_checksum'] = '2a803f578f341e164f6753e410413d16ab60fabe31dc491d1fe35c984a5cce696bc71f57757d4538fe7738be04065a216f3ebad4ef7e0ce1bb4c51bc36d6be86'
 
 default['travis_build_environment']['neo4j']['service_enabled'] = false
 default['travis_build_environment']['neo4j']['jvm_heap'] = '128m'

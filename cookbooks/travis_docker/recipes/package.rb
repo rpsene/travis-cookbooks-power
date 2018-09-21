@@ -45,3 +45,14 @@ group 'adding user to docker group' do
   members node['travis_docker']['users']
   action %i[create manage]
 end
+
+service 'docker' do
+  action [ :stop, :start ]
+end
+
+cookbook_file '/etc/docker/daemon.json' do
+  source 'etc/default/daemon.json'
+  owner 'root'
+  group 'root'
+  mode 0o640
+end
